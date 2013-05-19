@@ -9,7 +9,9 @@ How to install it?
  - Manualy create *ABAP* folder under your Package folder: *...\Packages\ABAP*
  - Extract the content of zip archive into the *ABAP* folder (!!only the files without *ABAP-Sublime-Plugin-master* folder!!).
 
-**Note:** Package folder on Windows Vista/7 is located here: *c:\Users\[UserName]\AppData\Roaming\Sublime Text 2\Packages* 
+**Location of Package folder according your platform:**
+ - Windows Vista/7: *c:\Users\[UserName]\AppData\Roaming\Sublime Text 2\Packages* 
+ - OS X/Unix-like: *~/Library/Application Support/Sublime Text 2/Packages*
 
 Important notes
 ---------------
