@@ -16,6 +16,7 @@ How to install it?
 Important notes
 ---------------
  - If the file you are editing has *.abp* extension, syntax highlighting works automaticaly. Otherwise you have to set the ABAP syntax explicitely (click on the bottom right corner in the ST2 window a choose ABAP).
+ - It's quite simple to add more file extensions by editing ABAP.tmLanguage file (located in your ABAP plugin folder under Package folder). Search for *fileTypes* section in the beginning of the file and add for example line *&lt;string&gt;txt&lt;/string&gt;* after the line *&lt;string&gt;abp&lt;/string&gt;*.
  - If nothing works, restart ST2!
 
 What you can do with ABAP plugin
