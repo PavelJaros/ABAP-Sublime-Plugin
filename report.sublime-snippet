@@ -5,7 +5,7 @@
 *&
 *&---------------------------------------------------------------------*
 *& Description:
-*& Author: PJAROS, itelligence
+*& Author: [Edit the snippet report.sublime-snippet to enter your name]
 *&---------------------------------------------------------------------*
 
 REPORT z${1:[report_name]}.
