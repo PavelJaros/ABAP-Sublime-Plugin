@@ -1,13 +1,15 @@
 ABAP-Sublime-Plugin
 ===================
 
-Description: **ABAP Syntax Highlighter for Sublime Text**
+Description: **ABAP Syntax Highlighter for Sublime Text 2**
 
 How to install it?
 ------------------
 Extract all files from zip archive into the folder: *c:\Users\[UserName]\AppData\Roaming\Sublime Text 2\Packages\ABAP\*
 
-*Note:* It is necessary to create "ABAP" folder under "Packages" folder manualy.
+ - *1st note:* It is necessary to create "ABAP" folder under "Packages" folder manualy.
+ - *2nd note:* If the file you are editing has *.abp* extension, syntax highlighting works automaticaly. Otherwise you have to set the ABAP syntax explicitely (click on the bottom right corner in the ST2 window a choose ABAP).
+ - *3rd note:* If nothing works, restart ST2!
 
 What you can do with ABAP plugin
 --------------------------------
