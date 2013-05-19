@@ -5,9 +5,16 @@ Description: **ABAP Syntax Highlighter for Sublime Text 2**
 
 How to install it?
 ------------------
-Extract the content of zip archive into the folder: *c:\Users\[UserName]\AppData\Roaming\Sublime Text 2\Packages\ABAP\*
- - *1st note:* If the file you are editing has *.abp* extension, syntax highlighting works automaticaly. Otherwise you have to set the ABAP syntax explicitely (click on the bottom right corner in the ST2 window a choose ABAP).
- - *2nd note:* If nothing works, restart ST2!
+ - Open your **Package folder**. The easiest way to identify the Package folder is to go to ST2 main menu: *Preferences -> Browse Packages...* 
+ - Manualy create *ABAP* folder under your Package folder: *...\Packages\ABAP*
+ - Extract the content of zip archive into the *ABAP* folder (!!only the files without *ABAP-Sublime-Plugin-master* folder!!).
+
+**Note:** Package folder on Windows Vista/7 is located here: *c:\Users\[UserName]\AppData\Roaming\Sublime Text 2\Packages* 
+
+Important notes
+---------------
+ - If the file you are editing has *.abp* extension, syntax highlighting works automaticaly. Otherwise you have to set the ABAP syntax explicitely (click on the bottom right corner in the ST2 window a choose ABAP).
+ - If nothing works, restart ST2!
 
 What you can do with ABAP plugin
 --------------------------------
