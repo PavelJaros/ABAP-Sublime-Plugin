@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+READ TABLE ${1:gt_data} INDEX ${2:sy-tabix}.
+IF sy-subrc = 0.
+  ${0:"write some code here...}
+ENDIF.
+]]></content>
+    <tabTrigger>readi</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Read index</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+****************************************
+* TOP OF PAGE                          *
+****************************************
+TOP-OF-PAGE.
+  ${0:"heading of the list}
+]]></content>
+    <tabTrigger>ev-top</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Top-of-page</description>
+</snippet>

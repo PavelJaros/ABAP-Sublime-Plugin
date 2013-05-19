@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[OCCURS ${1:[lines]} WITH HEADER LINE${2:.}]]></content>
+    <tabTrigger>occurs</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Occurs declaration</description>
+</snippet>

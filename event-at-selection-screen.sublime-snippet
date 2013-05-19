@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+****************************************
+* AT SELECTION-SCREEN                  *
+****************************************
+AT SELECTION-SCREEN.
+  ${0:"global field check on F8 key}
+*  IF sy-ucomm = 'ONLI'.
+*    IF [p_field1] IS INITIAL.
+*      MESSAGE e000(xt) WITH '[p_field1] is obligatory!'.
+*    ENDIF.
+*  ENDIF.  
+]]></content>
+    <tabTrigger>ev-sel</tabTrigger>
+    <scope>source.abp</scope>
+    <description>At selection-screen</description>
+</snippet>

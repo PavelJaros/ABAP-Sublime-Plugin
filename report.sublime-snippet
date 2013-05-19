@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+*&---------------------------------------------------------------------*
+*& Report  z${1:[report_name]}
+*&
+*&---------------------------------------------------------------------*
+*& Description:
+*& Author: PJAROS, itelligence
+*&---------------------------------------------------------------------*
+
+REPORT z${1:[report_name]}.
+]]></content>
+    <tabTrigger>rep</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Report header</description>
+</snippet>

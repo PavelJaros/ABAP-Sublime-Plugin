@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+****************************************
+* DECLARATIONS                         *
+****************************************
+TYPE-POOLS: slis, icon.
+
+TABLES: ${1:[dbtab1]}, ${2:[dbtab2]}.
+
+DATA: BEGIN OF gt_data OCCURS 10,
+        ${3:[field1]} LIKE ${1:[dbtab1]}-${3:[field1]},
+        ${4:[field2]} LIKE ${1:[dbtab1]}-${4:[field2]},
+        ${5:[field3]} LIKE ${1:[dbtab1]}-${5:[field3]},
+        ${6:[field4]} LIKE ${2:[dbtab2]}-${6:[field4]},
+        ${7:[field5]} LIKE ${2:[dbtab2]}-${7:[field5]},
+        ${8:[field6]} LIKE ${2:[dbtab2]}-${8:[field6]},        
+
+        selkz TYPE xfeld,
+      END OF gt_data.
+
+DATA: BEGIN OF gt_return OCCURS 1,
+        ${3:[field1]} LIKE ${1:[dbtab1]}-${3:[field1]},
+        ${4:[field2]} LIKE ${1:[dbtab1]}-${4:[field2]}.
+        INCLUDE STRUCTURE bapiret2.
+DATA END OF gt_return.
+
+DATA: g_subrc LIKE sy-subrc.
+]]></content>
+    <tabTrigger>decl</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Declarations of variables</description>
+</snippet>

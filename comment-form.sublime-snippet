@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+*&---------------------------------------------------------------------*
+*&      Form  ${1:[form_name]} 
+*&---------------------------------------------------------------------*			
+]]></content>
+    <tabTrigger>com-form</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Comment - form</description>
+</snippet>

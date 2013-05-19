@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+*--------- ${1:[comment here]} ---------			
+]]></content>
+    <tabTrigger>com</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Comment</description>
+</snippet>

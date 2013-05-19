@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+COMMIT WORK AND WAIT.]]></content>
+    <tabTrigger>comm</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Commit work</description>
+</snippet>

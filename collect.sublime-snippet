@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[COLLECT ${1:gt_data}.]]></content>
+    <tabTrigger>col</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Collect</description>
+</snippet>

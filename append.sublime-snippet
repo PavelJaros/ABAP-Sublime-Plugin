@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[APPEND ${1:gt_data}.]]></content>
+    <tabTrigger>app</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Append</description>
+</snippet>

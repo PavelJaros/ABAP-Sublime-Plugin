@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+IF ${1:[field1]} = ${2:[field2]}.
+  ${0:"write some code here...}
+ENDIF.]]></content>
+    <tabTrigger>if</tabTrigger>
+    <scope>source.abp</scope>
+    <description>If</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+****************************************
+* START OF SELECTION                   *
+****************************************
+START-OF-SELECTION.
+  ${0:"main part of program}
+]]></content>
+    <tabTrigger>ev-start</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Start-of-selection</description>
+</snippet>

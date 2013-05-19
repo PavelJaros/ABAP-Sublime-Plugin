@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[FIELD-SYMBOLS: <fs_${1:[name]}> LIKE gt_${1:[name]}.]]></content>
+    <tabTrigger>fsl</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Field-symbols like</description>
+</snippet>

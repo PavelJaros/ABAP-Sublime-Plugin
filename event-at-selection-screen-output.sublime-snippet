@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+****************************************
+* AT SELECTION SCREEN OUTPUT           *
+****************************************
+AT SELECTION-SCREEN OUTPUT.
+  ${0:"modify appearance of selection screen here}
+*   LOOP AT SCREEN.
+*     IF screen-group1 = 'NOD'.
+*       screen-active = '0'.
+*       MODIFY SCREEN.
+*     ENDIF.
+*   ENDLOOP.
+]]></content>
+    <tabTrigger>ev-selout</tabTrigger>
+    <scope>source.abp</scope>
+    <description>At selection-screen output</description>
+</snippet>

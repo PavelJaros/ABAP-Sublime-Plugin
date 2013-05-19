@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+CALL FUNCTION 'BAPI_TRANSACTION_COMMIT'
+  EXPORTING
+    wait = 'X'.
+]]></content>
+    <tabTrigger>comm-b</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Commit called by BAPI</description>
+</snippet>

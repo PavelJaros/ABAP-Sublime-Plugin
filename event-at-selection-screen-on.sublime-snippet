@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+****************************************
+* AT SELECTION SCREEN ON...            *
+****************************************
+AT SELECTION-SCREEN ON p_${1:"field1]}.
+  ${0:"handle check of your parameter here} 
+]]></content>
+    <tabTrigger>ev-sel-on</tabTrigger>
+    <scope>source.abp</scope>
+    <description>At selection-screen on</description>
+</snippet>

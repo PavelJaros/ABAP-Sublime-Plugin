@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+****************************************
+* INITIALIZATION                       *
+****************************************
+INITIALIZATION.
+  ${0:"initial values of selection screen}
+]]></content>
+    <tabTrigger>ev-init</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Initialization</description>
+</snippet>

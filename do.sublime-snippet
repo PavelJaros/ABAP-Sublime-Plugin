@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+DO.
+  ${0:"write some code here...}
+ENDDO.]]></content>
+    <tabTrigger>do</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Do</description>
+</snippet>

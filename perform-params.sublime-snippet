@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[PERFORM ${1:[form_name]} USING ${2:[p_using]} CHANGING ${3:[p_changing]}.]]></content>
+    <tabTrigger>perf-par</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Perform with parameters</description>
+</snippet>

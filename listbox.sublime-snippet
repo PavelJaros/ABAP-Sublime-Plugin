@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+PARAMETERS:
+  p_${1:[field]} AS LISTBOX VISIBLE LENGTH 20 DEFAULT '1' OBLIGATORY.
+
+*---------------------------------------------------------------------*
+*       FORM fill_listbox                                             *
+*---------------------------------------------------------------------*
+FORM fill_listbox.
+  DATA: lt_values TYPE vrm_values,
+        ls_values TYPE LINE OF vrm_values,
+        l_id TYPE vrm_id.
+
+  ls_values-key = '1'.
+  ls_values-text = text-t01.
+  APPEND ls_values TO lt_values.
+  ls_values-key = '2'.
+  ls_values-text = text-t02.
+  APPEND ls_values TO lt_values.
+  ls_values-key = '3'.
+  ls_values-text = text-t03.
+  APPEND ls_values TO lt_values.
+
+  l_id = p_${1:[field]}.
+  TRANSLATE l_id TO UPPER CASE.
+
+  CALL FUNCTION 'VRM_SET_VALUES'
+    EXPORTING
+      id     = l_id
+      values = lt_values.
+ENDFORM.                    "fill_listbox
+]]></content>
+    <tabTrigger>listbox</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Listbox on sel. screen</description>
+</snippet>

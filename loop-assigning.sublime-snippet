@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+LOOP AT gt_${1:data} ASSIGNING <fs_${1:data}>.
+  ${0:"write some code here...}
+ENDLOOP.]]></content>
+    <tabTrigger>loop-assign</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Loop assigning FS</description>
+</snippet>

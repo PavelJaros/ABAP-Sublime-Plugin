@@ -1,0 +1,83 @@
+<snippet>
+	<content><![CDATA[
+PARAMETERS p_fname TYPE localfile OBLIGATORY DEFAULT 'C:\temp\input.txt'.
+
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_fname.
+  PERFORM get_file_name USING ',*.TXT.' CHANGING p_fname.
+
+*&---------------------------------------------------------------------*
+*&      Form  upload_file
+*&---------------------------------------------------------------------*
+FORM upload_file.
+  DATA: l_filename TYPE string,
+        BEGIN OF ls_file,
+          ${1:line TYPE string},
+        END OF ls_file,
+        lt_file LIKE TABLE OF ls_file.
+
+  l_filename = p_fname.
+
+  CALL METHOD cl_gui_frontend_services=>gui_upload
+    EXPORTING
+      filename                = l_filename
+      filetype                = 'ASC'
+      codepage                = '4310' "UTF-8
+    CHANGING
+      data_tab                = lt_file
+    EXCEPTIONS
+      file_open_error         = 1
+      file_read_error         = 2
+      no_batch                = 3
+      gui_refuse_filetransfer = 4
+      invalid_type            = 5
+      no_authority            = 6
+      unknown_error           = 7
+      bad_data_format         = 8
+      header_not_allowed      = 9
+      separator_not_allowed   = 10
+      header_too_long         = 11
+      unknown_dp_error        = 12
+      access_denied           = 13
+      dp_out_of_memory        = 14
+      disk_full               = 15
+      dp_timeout              = 16
+      not_supported_by_gui    = 17
+      error_no_gui            = 18
+      OTHERS                  = 19.
+
+  IF sy-subrc = 0.
+    LOOP AT lt_file INTO ls_file.
+ 		  ${0:"write some code here...}
+    ENDLOOP.
+  ELSE.
+    MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno
+            WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.
+  ENDIF.
+ENDFORM.                    "upload_file
+
+*---------------------------------------------------------------------*
+*       FORM get_file_name                                            *
+*---------------------------------------------------------------------*
+FORM get_file_name USING p_mask
+                   CHANGING p_file LIKE rlgrap-filename.
+  CALL FUNCTION 'WS_FILENAME_GET'
+    EXPORTING
+      def_filename     = p_file
+      def_path         = 'C:\'
+      mask             = p_mask
+      mode             = '0'
+      title            = ''
+    IMPORTING
+      filename         = p_file
+    EXCEPTIONS
+      inv_winsys       = 1
+      no_batch         = 2
+      selection_cancel = 3
+      selection_error  = 4
+      OTHERS           = 5.
+ENDFORM.                    "get_file_name 
+]]></content>
+    <tabTrigger>file-up</tabTrigger>
+    <scope>source.abp</scope>
+    <description>File upload</description>
+</snippet>

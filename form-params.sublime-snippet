@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+*&---------------------------------------------------------------------*
+*&      Form  ${1:[form_name]} 
+*&---------------------------------------------------------------------*	
+FORM ${1:[form_name]} USING ${2:[p_using]} CHANGING ${3:[p_changing]}.
+  ${0:"write some code here...}
+ENDFORM.                    "${1:[form_name]} 
+]]></content>
+    <tabTrigger>form-par</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Form with parameters</description>
+</snippet>

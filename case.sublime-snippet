@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+CASE ${1:[field]}.
+  WHEN '${2:cond1}'.
+  	${3:"branch 1}
+  WHEN '${4:cond2}'. 
+  	${5:"branch 2}
+  OTHERS.
+  	${6:"branch 3}
+ENDCASE.]]></content>
+    <tabTrigger>case</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Case</description>
+</snippet>

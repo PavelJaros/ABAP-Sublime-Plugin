@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+MESSAGE ${1:s}000(xt) WITH '${2:[message text]}'.]]></content>
+    <tabTrigger>mess</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Message 000(xt)</description>
+</snippet>

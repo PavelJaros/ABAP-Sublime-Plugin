@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[SORT ${1:gt_data} STABLE BY ${2:[field1]} ${3:[field2]}.]]></content>
+    <tabTrigger>sort</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Sort</description>
+</snippet>

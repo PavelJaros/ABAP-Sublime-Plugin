@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+CONCATENATE gt_data-${1:[field1]} gt_data-${2:[field2]}
+ INTO gt_data-${3:[field3]} SEPARATED BY ${4:space}.]]></content>
+    <tabTrigger>conc</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Concatenate</description>
+</snippet>

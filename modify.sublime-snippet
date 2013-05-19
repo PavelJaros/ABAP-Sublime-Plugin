@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[MODIFY ${1:gt_data} TRANSPORTING ${2:[field]}.]]></content>
+    <tabTrigger>mod</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Modify</description>
+</snippet>

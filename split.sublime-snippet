@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[SPLIT ${1:[l_field]} AT '${2:,}' INTO ${3:l_field1} ${4:l_field2}.]]></content>
+    <tabTrigger>split</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Split</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+****************************************
+* AT USER-COMMAND                      *
+****************************************
+AT USER-COMMAND.
+  ${0:"handle user command here}
+*  g_ucomm = sy-ucomm.
+*  CASE g_ucomm.
+*    WHEN 'BACK'.
+*      LEAVE TO SCREEN 0.
+*    WHEN 'EXIT'.
+*      LEAVE PROGRAM.
+*  ENDCASE.
+]]></content>
+    <tabTrigger>ev-ucomm</tabTrigger>
+    <scope>source.abp</scope>
+    <description>At user-command</description>
+</snippet>

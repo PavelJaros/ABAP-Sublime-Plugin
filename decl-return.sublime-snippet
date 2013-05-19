@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+DATA: ${1:lt_return} TYPE bapiret2 OCCURS 1 WITH HEADER LINE.
+]]></content>
+    <tabTrigger>decl-ret</tabTrigger>
+    <scope>source.abp</scope>
+    <description>BAPIRET2 declaration</description>
+</snippet>

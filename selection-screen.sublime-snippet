@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+****************************************
+* SELECTION SCREEN                     *
+****************************************
+SELECTION-SCREEN: BEGIN OF BLOCK b1 WITH FRAME TITLE text-001.
+SELECT-OPTIONS: [s_opt1] FOR ${1:[dbtab1]}-${3:[field1]},
+                [s_opt2] FOR ${1:[dbtab1]}-${4:[field2]}.
+PARAMETERS: [p_par1] LIKE ${2:[dbtab2]}-${5:[field3]},
+            [p_par2] LIKE ${2:[dbtab2]}-${6:[field4]}.
+SELECTION-SCREEN: END OF BLOCK b1.
+]]></content>
+    <tabTrigger>sel-screen</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Selection screen</description>
+</snippet>

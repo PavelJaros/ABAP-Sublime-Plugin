@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+LOOP AT ${1:gt_data} WHERE ${2:[field1]} = ${3:[field2]}
+								  AND ${4:[field3]} = ${5:[field4]}.
+  ${0:"write some code here...}
+
+  MODIFY ${1:gt_data}.
+ENDLOOP.]]></content>
+    <tabTrigger>loop-w</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Loop where</description>
+</snippet>

@@ -1,0 +1,72 @@
+<snippet>
+	<content><![CDATA[
+****************************************
+* LOAD OF PROGRAM                      *
+****************************************
+LOAD-OF-PROGRAM.
+  "before dynpro is displayed
+
+****************************************
+* INITIALIZATION                       *
+****************************************
+INITIALIZATION.
+  "initial values of selection screen
+
+****************************************
+* AT SELECTION SCREEN ON...            *
+****************************************
+AT SELECTION-SCREEN ON [p_field1].
+   "handle check of [p_field1] here
+
+****************************************
+* AT SELECTION-SCREEN                  *
+****************************************
+AT SELECTION-SCREEN.
+  "global field check on F8 key
+*  IF sy-ucomm = 'ONLI'.
+*    IF [p_field1] IS INITIAL.
+*      MESSAGE e000(xt) WITH '[p_field1] is obligatory!'.
+*    ENDIF.
+*  ENDIF.    
+
+****************************************
+* AT SELECTION SCREEN OUTPUT           *
+****************************************
+AT SELECTION-SCREEN OUTPUT.
+  "modify appearance of selection screen here
+*   LOOP AT SCREEN.
+*     IF screen-group1 = 'NOD'.
+*       screen-active = '0'.
+*       MODIFY SCREEN.
+*     ENDIF.
+*   ENDLOOP.
+
+****************************************
+* AT USER-COMMAND                      *
+****************************************
+AT USER-COMMAND.
+ "handle user command here
+*  g_ucomm = sy-ucomm.
+*  CASE g_ucomm.
+*    WHEN 'BACK'.
+*      LEAVE TO SCREEN 0.
+*    WHEN 'EXIT'.
+*      LEAVE PROGRAM.
+*  ENDCASE.
+
+****************************************
+* TOP OF PAGE                          *
+****************************************
+TOP-OF-PAGE.
+  "heading of the list
+
+****************************************
+* START OF SELECTION                   *
+****************************************
+START-OF-SELECTION.
+  "main part of program
+]]></content>
+    <tabTrigger>events</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Set of Events</description>
+</snippet>

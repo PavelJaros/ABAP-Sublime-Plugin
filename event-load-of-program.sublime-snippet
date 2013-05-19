@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+****************************************
+* LOAD OF PROGRAM                      *
+****************************************
+LOAD-OF-PROGRAM.
+  ${0:"before dynpro is displayed}	
+]]></content>
+    <tabTrigger>ev-load</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Load-of-program</description>
+</snippet>

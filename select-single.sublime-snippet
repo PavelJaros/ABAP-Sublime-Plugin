@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+SELECT SINGLE ${1:[field1]} FROM ${2:[dbtab]} INTO l_${1:[field1]}
+ WHERE ${3:[field3]} = p_${3:[field3]}
+ AND ${4:[field4]} = p_${4:[field4]}.]]></content>
+    <tabTrigger>sel-s</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Select single</description>
+</snippet>

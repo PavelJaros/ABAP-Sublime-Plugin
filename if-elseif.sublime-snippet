@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+IF ${1:[field1]} = ${2:[field2]}.
+  ${0:"write some code here...}
+ELSEIF ${3:[field3]} = ${4:[field4]}.
+  ${5:"write some code here...}  
+ELSE.
+  ${6:"write some code here...}  
+ENDIF.]]></content>
+    <tabTrigger>if-e-if</tabTrigger>
+    <scope>source.abp</scope>
+    <description>If - ElseIF - Else</description>
+</snippet>

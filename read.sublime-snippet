@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+READ TABLE ${1:gt_data} WITH KEY ${2:[field1]} = ${3:[field2]}.
+IF sy-subrc = 0.
+  ${0:"write some code here...}
+ENDIF.
+]]></content>
+    <tabTrigger>read</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Read with key</description>
+</snippet>

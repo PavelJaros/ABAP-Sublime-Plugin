@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+*----------m_${1:[macro_name]}----------*		
+DEFINE m_${1:[macro_name]}.
+  ${0:"write some code here...}
+END-OF-DEFINITION.]]></content>
+    <tabTrigger>define</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Macro definition</description>
+</snippet>

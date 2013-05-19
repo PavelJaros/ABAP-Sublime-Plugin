@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+FUNCTION z_${1:[func_name]}.
+*"----------------------------------------------------------------------
+*"*"Local interface:
+*"  IMPORTING/EXPORTING/CHANGING/TABLES/EXCEPTIONS
+*"----------------------------------------------------------------------
+
+  ${0:"write some code here...}
+
+ENDFUNCTION.
+]]></content>
+    <tabTrigger>func</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Function</description>
+</snippet>

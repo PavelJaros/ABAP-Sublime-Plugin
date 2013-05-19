@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[FIELD-SYMBOLS: <fs_${1:[fs_name]}>.]]></content>
+    <tabTrigger>fs</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Field-symbols</description>
+</snippet>

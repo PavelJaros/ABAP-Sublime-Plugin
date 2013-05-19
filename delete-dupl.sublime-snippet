@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+DELETE ADJACENT DUPLICATES FROM ${1:gt_data} COMPARING ${2:[field1]}.
+]]></content>
+    <tabTrigger>del-dupl</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Delete adjacent dupl.</description>
+</snippet>

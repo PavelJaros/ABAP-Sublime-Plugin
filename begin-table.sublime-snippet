@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+BEGIN OF ${1:gt_data} OCCURS 10,
+        ${4:[field1]} LIKE ${2:[dbtab1]}-${4:[field1]},
+        ${5:[field2]} LIKE ${2:[dbtab1]}-${5:[field2]},
+        ${6:[field3]} LIKE ${2:[dbtab1]}-${6:[field3]},
+        ${7:[field4]} LIKE ${3:[dbtab2]}-${7:[field4]},
+        ${8:[field5]} LIKE ${3:[dbtab2]}-${8:[field5]},
+        ${9:[field6]} LIKE ${3:[dbtab2]}-${9:[field6]},        
+      END OF ${1:gt_data}.
+]]></content>
+    <tabTrigger>beg-tab</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Begin - table</description>
+</snippet>

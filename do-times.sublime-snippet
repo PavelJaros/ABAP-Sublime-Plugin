@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+DO ${1:l_times} TIMES.
+  ${0:"write some code here...}
+ENDDO.]]></content>
+    <tabTrigger>do-tm</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Do times</description>
+</snippet>

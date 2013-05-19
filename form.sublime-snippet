@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+*&---------------------------------------------------------------------*
+*&      Form  ${1:[form_name]} 
+*&---------------------------------------------------------------------*			
+FORM ${1:[form_name]}.
+  ${0:"write some code here...}
+ENDFORM.                    "${1:[form_name]}
+]]></content>
+    <tabTrigger>form</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Form</description>
+</snippet>

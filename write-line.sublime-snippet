@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[WRITE:/ '${1:[text1]}', '${2:[text2]}'.]]></content>
+    <tabTrigger>write</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Write text line</description>
+</snippet>

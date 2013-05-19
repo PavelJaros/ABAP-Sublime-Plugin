@@ -1,0 +1,102 @@
+<snippet>
+	<content><![CDATA[
+PARAMETERS p_fname TYPE localfile OBLIGATORY DEFAULT 'C:\temp\output.txt'.
+
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_fname.
+  PERFORM get_file_name USING ',*.TXT.' CHANGING p_fname. 
+
+*&---------------------------------------------------------------------*
+*&      Form  download_file
+*&---------------------------------------------------------------------*
+FORM download_file.
+  DATA l_fname TYPE string,
+       ls_file TYPE string,
+       lt_file LIKE TABLE OF ls_file.
+
+* prepare file content
+  LOOP AT gt_data.
+ 		CONCATENATE gt_data-${1:[field1]}
+ 		            gt_data-${2:[field2]}
+ 		            gt_data-${3:[field3]}
+ 		INTO ls_file SEPARATED BY '${4:[;]}'.
+
+  	APPEND ls_file TO lt_file.
+  ENDLOOP.     
+
+  IF 1 = 2. "optional file save dialog
+	  PERFORM file_save_dialog CHANGING l_fname.  
+	ELSE.
+	  l_fname = p_fname.  
+  ENDIF.
+
+  CALL METHOD cl_gui_frontend_services=>gui_download
+    EXPORTING
+      filename = l_fname
+      filetype = 'DAT'
+      codepage = '4310' "UTF-8
+    CHANGING
+      data_tab = lt_file
+    EXCEPTIONS
+      OTHERS   = 4.
+ENDFORM.                    "download_file
+
+*&---------------------------------------------------------------------*
+*&      Form  file_save_dialog
+*&---------------------------------------------------------------------*
+FORM file_save_dialog CHANGING p_fname TYPE string.
+  DATA: l_path TYPE string,
+        l_fullpath TYPE string.
+
+  l_path = l_fullpath = 'C:\temp\'.
+
+  CALL METHOD cl_gui_frontend_services=>file_save_dialog
+    EXPORTING
+      window_title         = 'Save file as...' "'Uložit soubor jako...'
+      default_file_name    = p_fname
+      file_filter          = '*.TXT'
+    CHANGING
+      filename             = p_fname
+      path                 = l_path
+      fullpath             = l_fullpath
+    EXCEPTIONS
+      cntl_error           = 1
+      error_no_gui         = 2
+      not_supported_by_gui = 3
+      OTHERS               = 4.
+
+  IF sy-subrc = 0 AND NOT l_fullpath IS INITIAL.
+    TRANSLATE l_fullpath TO LOWER CASE.
+    IF l_fullpath CS '.txt'.
+      CONCATENATE l_path p_fname INTO p_fname.
+    ELSE.
+      CONCATENATE l_path p_fname '.txt' INTO p_fname.
+    ENDIF. 
+  ENDIF.  
+ENDFORM.                    "file_save_dialog 
+
+*---------------------------------------------------------------------*
+*       FORM get_file_name                                            *
+*---------------------------------------------------------------------*
+FORM get_file_name USING p_mask
+                   CHANGING p_file LIKE rlgrap-filename.
+  CALL FUNCTION 'WS_FILENAME_GET'
+    EXPORTING
+      def_filename     = p_file
+      def_path         = 'C:\'
+      mask             = p_mask
+      mode             = '0'
+      title            = ''
+    IMPORTING
+      filename         = p_file
+    EXCEPTIONS
+      inv_winsys       = 1
+      no_batch         = 2
+      selection_cancel = 3
+      selection_error  = 4
+      OTHERS           = 5.
+ENDFORM.                    "get_file_name 
+]]></content>
+    <tabTrigger>file-down</tabTrigger>
+    <scope>source.abp</scope>
+    <description>File download</description>
+</snippet>
