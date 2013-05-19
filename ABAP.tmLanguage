@@ -94,7 +94,7 @@
 			<key>comment</key>
 			<string>match name of METHOD followed by dot at the end (this excludes CALL METHOD)</string>
 			<key>match</key>
-			<string>(?i)(METHOD)\s+([a-zA-Z_$]\w*(?=.$))</string>
+			<string>(?i)(METHOD)\s+([a-zA-Z_$]\w*(?=\s*.\s*$))</string>
 			<key>name</key>
 			<string>entity.name.function.abp</string>
 		</dict>				
