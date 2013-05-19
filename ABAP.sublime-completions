@@ -37,6 +37,7 @@
     "BIT-XOR",
     "BLANK",
     "BLOCK",
+    "BOUND",
     "BREAK-POINT",
     "BUFFER",
     "BY",
