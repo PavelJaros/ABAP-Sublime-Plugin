@@ -31,4 +31,5 @@ What you can do with ABAP plugin
 Recommendation
 --------------
 I prefer the default color scheme **Zenburnesque** to achieve the best results. 
+
 Go to the main menu: *Preferences -> Color Scheme -> Color Scheme - Defaul -> Zenburnesque*.
