@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
 SELECT * FROM ${1:[dbtab]} INTO CORRESPONDING FIELDS OF ${2:gt_data}
- WHERE ${3:[field1]} IN s_${3:[field1]}
- AND ${4:[field2]} IN s_${4:[field2]}
- AND ${5:[field3]} = p_${5:[field3]}
- AND ${6:[field4]} = p_${6:[field4]}.
+WHERE ${3:[field1]} IN s_${3:[field1]}
+AND ${4:[field2]} IN s_${4:[field2]}
+AND ${5:[field3]} = p_${5:[field3]}
+AND ${6:[field4]} = p_${6:[field4]}.
   APPEND ${2:gt_data}.
 ENDSELECT.
 ]]></content>
