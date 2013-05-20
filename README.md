@@ -32,4 +32,4 @@ Recommendation
 --------------
 I prefer the default color scheme **Zenburnesque** to achieve the best results. 
 
-Go to the main menu: *Preferences -> Color Scheme -> Color Scheme - Defaul -> Zenburnesque*.
+Go to the main menu: *Preferences -> Color Scheme -> Color Scheme - Default -> Zenburnesque*.
