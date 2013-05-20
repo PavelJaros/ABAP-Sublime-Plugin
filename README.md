@@ -30,6 +30,5 @@ What you can do with ABAP plugin
 
 Recommendation
 --------------
-I prefer the color scheme **Zenburn** to achieve the best results. 
-You can install it either by *Package Control* (press Shift+Ctrl+P -> write *Package Control: Install Package* [Enter] -> write *Zenburn* [Enter]) 
-or manualy (download it from https://github.com/colinta/zenburn).
+I prefer the default color scheme **Zenburnesque** to achieve the best results. 
+Go to the main menu: *Preferences -> Color Scheme -> Color Scheme - Defaul -> Zenburnesque*.
