@@ -93,7 +93,7 @@
 			<key>comment</key>
 			<string>--==[[ name of FORM/FUNCTION ]]==--</string>
 			<key>match</key>
-			<string>(?i)(FORM|FUNCTION)\s+([a-zA-Z_$]\w*)</string>
+			<string>(?i)\b(FORM|FUNCTION)\b\s+([a-zA-Z_$]\w*)</string>
 			<key>name</key>
 			<string>entity.name.function.abp</string>
 		</dict>	
@@ -114,7 +114,7 @@
 			<key>comment</key>
 			<string>--==[[ name of METHOD followed by dot (this excludes CALL METHOD) ]]==--</string>
 			<key>match</key>
-			<string>(?i)(METHOD)\s+([a-zA-Z_$]\w*(?=\s*.\s*$))</string>
+			<string>(?i)\b(METHOD)\b\s+([a-zA-Z_$]\w*(?=\s*.\s*$))</string>
 			<key>name</key>
 			<string>entity.name.function.abp</string>
 		</dict>				
@@ -140,7 +140,7 @@
 			<key>comment</key>
 			<string>--==[[ name of CLASS followed by DEFINITION or IMPLEMENTATION suffix ]]==--</string>
 			<key>match</key>
-			<string>(?i)(CLASS)\s+([a-zA-Z_$]\w*)\s+\b(DEFINITION|IMPLEMENTATION)\b</string>
+			<string>(?i)\b(CLASS)\b\s+([a-zA-Z_$]\w*)\s+\b(DEFINITION|IMPLEMENTATION)\b</string>
 			<key>name</key>
 			<string>entity.name.type.instance.abp</string>
 		</dict>		
@@ -166,7 +166,7 @@
 			<key>comment</key>
 			<string>--==[[ name of MODULE followed by INPUT or OUTPUT suffix ]]==--</string>
 			<key>match</key>
-			<string>(?i)(MODULE)\s+([a-zA-Z_$]\w*)\s+\b(INPUT|OUTPUT)\b</string>
+			<string>(?i)\b(MODULE)\b\s+([a-zA-Z_$]\w*)\s+\b(INPUT|OUTPUT)\b</string>
 			<key>name</key>
 			<string>entity.name.type.instance.abp</string>
 		</dict>			
@@ -174,7 +174,7 @@
 			<key>comment</key>
 			<string>--==[[ CALL command ]]==--</string>			
 			<key>match</key>
-			<string>(?i)(^|\s)(CALL)\s+\b(METHOD|FUNCTION|CUSTOMER-FUNCTION|SCREEN|TRANSACTION)\b</string>
+			<string>(?i)(^|\s)\b(CALL)\b\s+\b(METHOD|FUNCTION|CUSTOMER-FUNCTION|SCREEN|TRANSACTION)\b</string>
 			<key>name</key>
 			<string>storage.type.abp</string>
 		</dict>					
@@ -190,7 +190,7 @@
 			<key>comment</key>
 			<string>--==[[ basic data types ]]==--</string>					
 			<key>match</key>
-			<string>(?i)(^|\s)(TYPE)\s+\b(C|D|F|I|N|P|T|X)\b</string>
+			<string>(?i)(^|\s)\b(TYPE)\b\s+\b(C|D|F|I|N|P|T|X)\b</string>
 			<key>name</key>
 			<string>keyword.control.abp</string>
 		</dict> 
