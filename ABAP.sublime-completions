@@ -134,6 +134,7 @@
     "ERRORS",
     "EVENTS",
     "EXCEPTIONS",
+    "EXCLUDING",
     "EXEC",
     "EXIT",
     "EXIT-COMMAND",
