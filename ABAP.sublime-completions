@@ -352,6 +352,8 @@
     "SYNTAX-TRACE",
     "SYSTEM-CALL",
     "SYSTEM-EXCEPTIONS",
+    "TAB",
+    "TABBED",
     "TABLE",
     "TABLE_LINE",
     "TABLES",
