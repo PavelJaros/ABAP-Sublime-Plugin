@@ -33,3 +33,15 @@ Recommendation
 I prefer the default color scheme **Zenburnesque** to achieve the best results. 
 
 Go to the main menu: *Preferences -> Color Scheme -> Color Scheme - Default -> Zenburnesque*.
+
+Define own shortcut for ABAP syntax
+-----------------------------------
+Go to the main menu: *Preferences -> Key Bindings - User*
+Place following code inside brackets [ you key bindings here... ]. You can set another shortcut key instead of *ctrl+shift+a*.
+<pre><code>
+ // Set ABAP syntax
+	{"keys": ["ctrl+shift+a"], "command": "set_file_type",
+	"args": {"syntax": "Packages/ABAP/ABAP.tmLanguage"}
+	}
+</code></pre>
+Don't forget to save the file in the end.
