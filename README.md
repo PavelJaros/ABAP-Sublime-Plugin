@@ -36,8 +36,7 @@ Go to the main menu: *Preferences -> Color Scheme -> Color Scheme - Default -> Z
 
 Define own shortcut for ABAP syntax
 -----------------------------------
-Go to the main menu: *Preferences -> Key Bindings - User*
-Place following code inside brackets [ you key bindings here... ]. You can set another shortcut key instead of *ctrl+shift+a*.
+Go to the main menu: *Preferences -> Key Bindings - User*. Place following code inside brackets [ you key bindings here... ]. You can set another shortcut key instead of *ctrl+shift+a*.
 <pre><code>
  // Set ABAP syntax
 	{"keys": ["ctrl+shift+a"], "command": "set_file_type",
