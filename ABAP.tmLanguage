@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>abp</string>
+		<string>abap</string>
 	</array>
 	<key>name</key>
 	<string>ABAP</string>
