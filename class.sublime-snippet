@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+*&---------------------------------------------------------------------*
+*&      Class  ${1:[class_name]} 
+*&---------------------------------------------------------------------*			
+CLASS ${1:[class_name]} DEFINITION.
+  ${0:"write some code here...}
+ENDCLASS.                    "${1:[class_name]}
+
+CLASS ${1:[class_name]} IMPLEMENTATION.
+  ${0:"write some code here...}
+ENDCLASS.                    "${1:[class_name]}
+
+]]></content>
+    <tabTrigger>class</tabTrigger>
+    <scope>source.abp</scope>
+    <description>Class</description>
+</snippet>
+
