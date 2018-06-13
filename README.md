@@ -26,7 +26,7 @@ What you can do with ABAP plugin
  - speed up coding with the set of predefined snippets (of course it's very easy to create your owns)
  - get overview of forms, classes, methods and modules on *Ctrl+R* command
  - comment/uncomment selected blocks of code on *Ctrl+/* command
- - for more info please visit my website: http://www.jaros.in/item/abap-syntax-highlighting-for-sublime-text
+ - one more thing - maybe you would like to try out my Marias card game (Czech only) at http://marias.g6.cz/
 
 Recommendation
 --------------
