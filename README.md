@@ -42,7 +42,7 @@ Go to the main menu: *Preferences -> Key Bindings - User*. Place following code 
    {"keys": ["ctrl+shift+a"], "command": "set_file_type",
     "args": {"syntax": "Packages/ABAP/ABAP.tmLanguage"}
    },
-   // shorcut for quick switch project	
+   // Shortcut for quick switch project	
    { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },	
 </code></pre>
 Don't forget to save the file in the end.
